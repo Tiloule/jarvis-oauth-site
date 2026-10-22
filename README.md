@@ -1,20 +1,20 @@
 # Jarvis Personal Assistant — mini-site de présentation OAuth
 
-**Brouillon à examiner avant publication**, créé le 22 octobre 2026. Site statique, aucun framework ni logiciel payant nécessaire.
+**Site de présentation statique**, actualisé le 22 octobre 2026. Site statique, aucun framework ni logiciel payant nécessaire.
 
 ## Fichiers
 - `index.html` : page d'accueil de l'application
-- `confidentialite.html` : projet de politique de confidentialité à adapter et valider
+- `confidentialite.html` : politique de confidentialité avec contact public via GitHub Issues
 - `styles.css` : mise en page responsive
 
-## À valider impérativement avant publication
-1. Remplacer `[AJOUTER UNE ADRESSE DE CONTACT AVANT PUBLICATION]` par une adresse de contact dédiée ou choisie. Publier l'adresse la rend publique.
-2. Vérifier les traitements de données réellement effectués par Jarvis, les durées de conservation des journaux, les fournisseurs d'IA distants et toute transmission vers d'autres services. Ne pas publier des promesses inexactes.
-3. Confirmer le périmètre OAuth : Calendar, gmail.modify, gmail.send et scopes d'identité ; pas de Drive sur cette autorisation d'après le diagnostic Codex.
-4. Les pages publiques ne doivent JAMAIS contenir jetons, secrets, client secret, fichiers .env, captures d'écran privées ou liens vers le dashboard local.
+## Transparence et vérifications
+1. Contact public : [GitHub Issues](https://github.com/Tiloule/jarvis-oauth-site/issues/new). Ces demandes sont publiques : ne jamais y transmettre de données personnelles, jetons ou secrets.
+2. Maintenir la politique de confidentialité à jour si les fournisseurs d'IA, la conservation des journaux ou les flux de données évoluent.
+3. Périmètre OAuth observé : Calendar, gmail.modify, gmail.send et scopes d'identité ; pas de Drive sur cette autorisation d'après le diagnostic Codex.
+4. Ne JAMAIS publier jetons, secrets, client secret, fichiers .env, captures d'écran privées ou liens vers le dashboard local.
 
 ## Hébergement gratuit
-- Créer un dépôt public GitHub ne contenant **que ces trois fichiers web**.
+- Créer un dépôt public GitHub ne contenant **que les fichiers publics du mini-site**.
 - Activer GitHub Pages dans Settings → Pages → Deploy from a branch → main / (root).
 - Le site sera à une adresse de type `https://UTILISATEUR.github.io/DEPOT/`.
 - Pour les exigences d'identité OAuth Google, prévoir un domaine/sous-domaine dont on peut vérifier la propriété via un enregistrement TXT DNS : une URL github.io **seule** n'est pas une garantie d'acceptation de Google lors de la vérification d'un domaine.
